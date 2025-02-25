@@ -1,0 +1,108 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.avi_top_nav{
+    background-color: rgb(1, 41, 68);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avi_top_nav .avi_top_details{
+    display: flex;
+}
+.avi_top_nav .avi_top_details p{
+    margin: 10px;
+    color: rgb(235, 234, 234);
+}
+.avi_top_nav .avi_top_details p i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+.avi_top_nav .avi_top_details i{
+    color: rgb(245, 243, 243);
+    margin: 8px;
+    font-size: 25px
+}
+@media(max-width:780px){
+    .avi_top_nav .avi_top_details p{
+        display: none;
+    }
+    .avi_top_nav{
+        flex-wrap: wrap;
+    } 
+}
+/*--------------------- avi_nav_item -----------------*/
+.avi_nav_item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.nav_total_item{
+    background: white;
+    width: 80%;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_total_item .main_menu{
+    display: flex;
+    width: 100%;
+}
+.main_menu .menu_li{
+    list-style: none;
+    padding: 0px 10px;
+}
+.nav_total_item input{
+    width: 15%;
+    outline: none;
+}
+.humber{
+    display: none;
+    padding: 10px;
+    font-size: 22px;
+}
+@media (max-width:700px){
+    .nav_total_item .main_menu{
+        display: none;
+    } 
+    .humber{
+        display: block;
+    }
+    .nav_total_item input{
+       display: none;
+    }
+    .avi_nav_item{
+        top: 50px;
+    }
+}
+/*------------------ avi_slider -----------------*/
+.avi_slider{
+    background: url(marco-xu-ToUPBCO62Lw-unsplash.jpg)no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.avi_slider .slider_same_text{
+    width: 80%;
+}
+.avi_slider .slider_same_text h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.avi_slider .slider_same_text p{
+    color: white;
+}
+.avi_slider .slider_same_text button{
+    padding: 1%;
+    background: blueviolet;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
